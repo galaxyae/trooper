@@ -54,11 +54,28 @@
 	<![endif]-->
 	<style type="text/css">
 		*{
-			font-family: 'Mada', sans-serif;
+			/*font-family: 'Mada', sans-serif;*/
+			font-family: Times new Roman;
 		  }
 		  html, body{
 		  	scroll-behavior: smooth;
 		  }
+		  @media only screen and (max-width: 1200px) {
+			  a.logo img {
+			    max-height: 10em;
+			  }
+			  .page_slider .intro_layers_wrapper{
+					/*top: 20em;*/
+					display: none;
+				}
+				.page_slider{
+					height: 400px;
+				}
+				.page_slider .flex-control-nav {
+					display: none;
+				}
+			}
+		
 	</style>
 
 </head>
@@ -265,7 +282,8 @@
 						<div class="row d-flex align-items-center justify-content-center">
 							<div class="col-xl-3 col-md-4 col-12 text-center">
 								<a href="index.html" class="logo">
-									<img src="images/logo.png" alt="">
+									<img src="images/logo.png" alt="" style="width: 10em;
+									height: 10em;">
 									<span class="d-flex flex-column">
 										<span class="logo-text color-darkgrey" style="font-family: Mada;">TROOPER</span>
 										<span class="logo-subtext">SECURITY AGENCY</span>
